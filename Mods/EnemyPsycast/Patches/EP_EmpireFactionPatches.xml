@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- adding Empire_Fighter_Psycaster melee to all groupmker where cataphract is-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li/options[Empire_Fighter_Cataphract]</xpath>
+        <value>
+            <Empire_Fighter_Psycaster>0.8</Empire_Fighter_Psycaster>
+        </value>
+    </Operation>
+
+    <!-- adding Empire_Fighter_Psycaster to settlements-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+        <value>
+            <Empire_Fighter_Psycaster_Settlement>0.3</Empire_Fighter_Psycaster_Settlement>
+        </value>
+    </Operation>
+</Patch>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Stellic Guard Base -->
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/techHediffsRequired</xpath>
+        <value>
+            <li>FSFBionicLung</li>
+            <li>FSFBionicLung</li>
+            <li>FSFBionicLiver</li>
+            <li>FSFBionicLiver</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medical System Expansion 2</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/techHediffsRequired</xpath>
+        <value>
+            <li>FSFBionicPowerArm</li>
+            <li>FSFBionicPowerArm</li>
+        </value>
+        </nomatch>
+    </Operation>
+</Patch>

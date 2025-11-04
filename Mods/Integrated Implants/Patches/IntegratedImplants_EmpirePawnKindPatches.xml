@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Janissary -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Janissary"]/techHediffsRequired</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Janissary"]</xpath>
+            <value>
+                <techHediffsRequired />
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Janissary"]/techHediffsRequired</xpath>
+        <value>
+            <li>InternalClimateControlImplant</li>
+            <li>LTS_ShoulderTurret</li>
+        </value>
+    </Operation>
+
+    <!-- Champion -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PawnKindDef[@Name="CataphractBase"]/techHediffsRequired</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[@Name="CataphractBase"]</xpath>
+            <value>
+                <techHediffsRequired />
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]</xpath>
+        <value>
+            <techHediffsRequired>
+                <li>InternalClimateControlImplant</li>
+                <li>LTS_ShoulderTurret</li>
+            </techHediffsRequired>
+        </value>
+    </Operation>
+    
+    <!-- Grenadier -->
+     
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/techHediffsRequired</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]</xpath>
+            <value>
+                <techHediffsRequired />
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/techHediffsRequired</xpath>
+        <value>
+            <li>StrengthEnhancer</li>
+            <li>Synthmarrow</li>
+            <li>LTS_SubdermalArmour</li>
+            <li>LTS_ShoulderChargeTurret</li>
+            <li>LTS_BionicTail</li>
+            <li>InternalClimateControlImplant</li>
+            <li>LTS_CellularAdapter</li>
+            <li>LTS_StealthSystem</li>
+        </value>
+    </Operation>
+
+    <!-- Cataphract -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PawnKindDef[@Name="CataphractBase"]/techHediffsRequired</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[@Name="CataphractBase"]</xpath>
+            <value>
+                <techHediffsRequired />
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[@Name="CataphractBase"]/techHediffsRequired</xpath>
+        <value>
+            <li>StrengthEnhancer</li>
+            <li>Synthmarrow</li>
+            <li>LTS_SubdermalArmour</li>
+            <li>LTS_ShoulderChargeTurret</li>
+            <li>LTS_BionicTail</li>
+            <li>InternalClimateControlImplant</li>
+            <li>LTS_CellularAdapter</li>
+            <li>LTS_StealthSystem</li>
+        </value>
+    </Operation>
+
+    <!-- Stellic Guard -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/techHediffsRequired</xpath>
+        <value>
+            <li>StrengthEnhancer</li>
+            <li>Synthmarrow</li>
+            <li>LTS_PrestigeSubdermalArmour</li>
+            <li>LTS_ShoulderChargeTurret</li>
+            <li>CranialInsulation</li>
+            <li>EltexAdornments</li>
+            <li>NeuralHeatsink</li>
+            <li>LTS_BionicTail</li>
+            <li>InternalClimateControlImplant</li>
+            <li>LTS_CellularAdapter</li>
+            <li>LTS_StealthSystem</li>
+        </value>
+    </Operation>
+</Patch>

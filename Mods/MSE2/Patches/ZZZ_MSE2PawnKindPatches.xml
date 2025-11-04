@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Cataphract -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]/techHediffsRequired</xpath>
+        <value>
+            <li>RangedPlatformModule</li>
+            <li>RangedPlatformModule</li>
+            <li>RangedPlatformModule</li>
+            <li>RangedPlatformModule</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>PowerClaw</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_CataphractMelee"]/techHediffsRequired</xpath>
+        <value>
+            <li>MeleePlatformModule</li>
+            <li>MeleePlatformModule</li>
+            <li>MeleePlatformModule</li>
+            <li>MeleePlatformModule</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+        </value>
+    </Operation>
+
+    <!-- Stellar -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]/techHediffsRequired</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]</xpath>
+            <value>
+                <techHediffsRequired />
+            </value>
+        </nomatch>
+    </Operation>
+
+     <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]/techHediffsRequired</xpath>
+        <value>
+            <li>RangedPlatformModule</li>
+            <li>RangedPlatformModule</li>
+            <li>RangedPlatformModule</li>
+            <li>RangedPlatformModule</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>PowerClaw</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]/techHediffsRequired</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]</xpath>
+            <value>
+                <techHediffsRequired />
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]/techHediffsRequired</xpath>
+        <value>
+            <li>MeleePlatformModule</li>
+            <li>MeleePlatformModule</li>
+            <li>MeleePlatformModule</li>
+            <li>MeleePlatformModule</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+            <li>ModuleEfficiency</li>
+        </value>
+    </Operation>
+
+</Patch>

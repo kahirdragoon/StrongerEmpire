@@ -1,0 +1,60 @@
+<Defs>
+    <PawnKindDef ParentName="CataphractBase" Name="EmpireFighterPsycaster">
+        <defName>Empire_Fighter_Psycaster</defName>
+        <label>Psycaster</label>
+        <royalTitleChance>1</royalTitleChance>
+        <titleSelectOne>
+            <li>Acolyte</li>
+            <li>Knight</li>
+            <li>Praetor</li>
+            <li>Baron</li>
+            <li>Count</li>
+        </titleSelectOne>
+        <combatPower>180</combatPower>
+        <weaponTags>
+            <li>SpacerGun</li>
+        </weaponTags>
+        <weaponMoney>2000~3000</weaponMoney>
+        <apparelColor>(250,250,250)</apparelColor>
+        <apparelRequired>
+            <li>Apparel_ArmorHelmetCataphractPrestige</li>
+            <li>Apparel_ArmorCataphractPrestige</li>
+            <li>Apparel_PackBroadshield</li>
+        </apparelRequired>
+        <specificApparelRequirements Inherit="False">
+            <li>
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+                <stuff>Hyperweave</stuff>
+            </li>
+            <li>
+                <bodyPartGroup>Legs</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+                <stuff>Hyperweave</stuff>
+            </li>
+        </specificApparelRequirements>
+        <techHediffsTags>
+            <li>Advanced</li>
+            <li>ImplantEmpireCommon</li>
+            <li>ImplantEmpireRoyal</li>
+        </techHediffsTags>
+        <techHediffsRequired>
+            <li>PsychicSensitizer</li>
+        </techHediffsRequired>
+        <initialWillRange>4~6</initialWillRange>
+        <initialResistanceRange>17~26</initialResistanceRange>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.03</Neanderthal>
+                <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.03</Hussar>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0.1</Genie>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="EmpireFighterPsycaster">
+        <defName>Empire_Fighter_Psycaster_Settlement</defName>
+        <combatPower>80</combatPower>
+    </PawnKindDef>
+</Defs>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Absolver -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Fighter_Absolver"]</xpath>
+        <value>
+            <itemQuality>Excellent</itemQuality>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Fighter_Absolver"]/techHediffsMaxAmount</xpath>
+        <value>
+            <techHediffsMaxAmount>22</techHediffsMaxAmount>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Fighter_Absolver"]/techHediffsMoney</xpath>
+        <value>
+            <techHediffsMoney>7000~20000</techHediffsMoney>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Fighter_Absolver"]/techHediffsRequired</xpath>
+        <value>
+            <li>Coagulator</li>
+            <li>HealingEnhancer</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Expanded Prosthetics and Organ Engineering - Forked</li>
+            <li>EPOE-Forked: Expanded Prosthetics and Organ Engineering - Forked</li>
+            <li>Expanded Prosthetics, Implants and Augmentations</li>
+            <li>EPOE-Forked: Legacy mode</li>
+            <li>[FSF] Advanced Bionics Expansion</li>
+            <li>EPOE 1.6 Update (Expanded Prosthetics and Organ Engineering)</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Fighter_Absolver"]/techHediffsRequired</xpath>
+            <value>
+                <li>BionicStomach</li>
+                <li>BionicHeart</li>
+                <li>Immunoenhancer</li>
+                <li>Immunoenhancer</li>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Expanded Prosthetics and Organ Engineering - Forked</li>
+            <li>EPOE-Forked: Expanded Prosthetics and Organ Engineering - Forked</li>
+            <li>Expanded Prosthetics, Implants and Augmentations</li>
+            <li>EPOE-Forked: Legacy mode</li>
+            <li>EPOE 1.6 Update (Expanded Prosthetics and Organ Engineering)</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Fighter_Absolver"]/techHediffsRequired</xpath>
+            <value>
+                <li>BionicStomach</li>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[FSF] Vanilla Bionics Expansion</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Fighter_Absolver"]/techHediffsRequired</xpath>
+            <value>
+                <li>FSFBionicLung</li>
+                <li>FSFBionicLung</li>
+                <li>FSFBionicLiver</li>
+                <li>FSFBionicLiver</li>
+                <li>FSFBionicPowerArm</li>
+                <li>FSFBionicPowerArm</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[FSF] Advanced Bionics Expansion</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Fighter_Absolver"]/techHediffsRequired</xpath>
+            <value>
+                <li>FSFAdvBionicSpine</li>
+                <li>FSFAdvBionicStomach</li>
+                <li>FSFAdvBionicHeart</li>
+                <li>FSFAdvBionicLung</li>
+                <li>FSFAdvBionicLung</li>
+                <li>FSFAdvBionicLiver</li>
+                <li>FSFAdvBionicKidney</li>
+                <li>FSFAdvBionicKidney</li>
+                <li>FSFAdvBionicEye</li>
+                <li>FSFAdvBionicEye</li>
+                <li>FSFAdvBionicEar</li>
+                <li>FSFAdvBionicEar</li>
+                <li>FSFAdvBionicJaw</li>
+                <li>FSFAdvBionicPowerArm</li>
+                <li>FSFAdvBionicPowerArm</li>
+                <li>FSFAdvBionicPowerLeg</li>
+                <li>FSFAdvBionicPowerLeg</li>
+                <li>FSFImplantEMPShield</li>
+                <li>FSFImplantMechanitesSensory</li>
+                <li>FSFImplantTorsoRespirator</li>
+                <li>FSFAIModuleCore</li>
+                <li>FSFAIModuleMelee</li>
+                <li>FSFAIModuleShooting</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Fighter_Absolver"]/techHediffsRequired</xpath>
+            <value>
+                <li>BionicLeg</li>
+                <li>BionicLeg</li>
+                <li>BionicEar</li>
+                <li>BionicEar</li>
+                <li>BionicJaw</li>
+                <li>BionicSpine</li>
+                <li>BionicEye</li>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[FSF] Vanilla Bionics Expansion</li>
+            <li>[FSF] Advanced Bionics Expansion</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Fighter_Absolver"]/techHediffsRequired</xpath>
+            <value>
+                <li>BionicArm</li>
+                <li>BionicArm</li>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Rah's Bionics and Surgery Expansion</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Fighter_Absolver"]/techHediffsRequired</xpath>
+            <value>
+                <li>AdvancedBionicSpine</li>
+                <li>AdvancedBionicEye</li>
+                <li>AdvancedBionicEye</li>
+                <li>AdvancedBionicEar</li>
+                <li>AdvancedBionicEar</li>
+                <li>BionicJaw</li>
+                <li>AdvancedPowerArm</li>
+                <li>AdvancedPowerArm</li>
+                <li>AdvancedBionicLeg</li>
+                <li>AdvancedBionicLeg</li>
+                <li>ExoskeletonSuit</li>
+                <li>Hyporegulator</li>
+                <li>Cortexaugmentor</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Integrated Implants</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Fighter_Absolver"]/techHediffsRequired</xpath>
+            <value>
+                <li>StrengthEnhancer</li>
+                <li>Synthmarrow</li>
+                <li>LTS_PrestigeSubdermalArmour</li>
+                <li>LTS_ShoulderChargeTurret</li>
+                <li>CranialInsulation</li>
+                <li>EltexAdornments</li>
+                <li>NeuralHeatsink</li>
+                <li>LTS_BionicTail</li>
+                <li>InternalClimateControlImplant</li>
+            </value>
+        </match>
+    </Operation>
+</Patch>

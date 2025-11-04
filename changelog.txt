@@ -1,0 +1,31 @@
+# Changelog for The Empire strikes back
+# Author is kahirdragoon
+
+#Todos
+# patch VPE psycaster with bionics
+
+1.2.5
+- fixed error when Odyssey isnt loaded
+
+1.2.4
+- added MSE2 compatibility
+
+1.2.3
+- added Too Many Compat Compatibility
+
+1.2.2
+- added Combat Multiplier Setting
+
+1.2.1
+- added Melee Cataphracts to trade caravans
+- fixing patch error while having multiple bionics mods active
+- remove wimp gene because it conflicts with brawler
+- patch grenadiers the same as janissaries
+- added active camouflage and cellular adapter from Integrated implants
+- increase raiders number of possible hediffs
+
+1.2.0 Added Odyssey support
+1.1.0 - Added support for EltexWeaponry
+- fixed positives genes assigned twice
+- bionics for the absolver
+1.0.0 Initial Upload

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<loadFolders>
+  <v1.6>
+    <li>/</li>
+    <li>1.6</li>
+    <li IfModActive="ludeon.rimworld.biotech">Mods/Biotech/1.6</li>
+    <li IfModActive="ludeon.rimworld.odyssey">Mods/Odyssey/1.6</li>
+    <li IfModActive="vanillaracesexpanded.hussar">Mods/VRE_Hussar/1.6</li>
+    <li IfModActive="frozensnowfox.advancedbionicsexpansion">Mods/AdvancedBionicsExpanded</li>
+    <li IfModActive="frozensnowfox.vanillabionicsexpansion">Mods/VanillaBionicsExpanded</li>
+    <li IfModActive="vat.epoeforked, ykara.elstrages.epoe">Mods/EPOE</li>
+    <li IfModActive="rah.rbse, rah.rbsehc">Mods/RBSE</li>
+    <li IfModActive="lts.i">Mods/Integrated Implants</li>
+    <li IfModActive="turnovus.submod.backpacksarenotbelts">Mods/PacksAreNotBelts</li>
+    <li IfModActive="mlie.powerfulpsycastai, metalocif.aipsycasts">Mods/EnemyPsycast</li>
+    <li IfModActive="oskarpotocki.vfe.empire">Mods/VFE-Empire</li>
+    <li IfModActive="zal.eltexweaponry">Mods/EltexWeaponary</li>
+    <li IfModActive="wara.toomanymods">Mods/TooManyCombat</li>
+    <li IfModActive="mse2.core">Mods/MSE2</li>
+  </v1.6>
+</loadFolders>

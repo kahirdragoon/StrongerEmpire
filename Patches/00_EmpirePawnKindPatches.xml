@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Imperial Fighter Base -->
+
+    <!-- Combat drugs not working for whatever reason-->
+    <!-- <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/combatEnhancingDrugsChance</xpath>
+        <value>
+            <combatEnhancingDrugsChance>1</combatEnhancingDrugsChance>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/combatEnhancingDrugsCount</xpath>
+        <value>
+            <combatEnhancingDrugsCount>1</combatEnhancingDrugsCount>
+        </value>
+    </Operation> -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/apparelTags</xpath>
+        <value>
+            <li>BeltDefensePop</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/techHediffsChance</xpath>
+        <value>
+            <techHediffsChance>0.5</techHediffsChance>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/techHediffsMoney</xpath>
+        <value>
+            <techHediffsMoney>4000~6000</techHediffsMoney>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medical System Expansion 2</li>
+        </mods>
+        <nomatch Class="PatchOperationConditional">
+            <xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/techHediffsMaxAmount</xpath>
+            <match Class="PatchOperationReplace">
+                <xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/techHediffsMaxAmount</xpath>
+                <value>
+                    <techHediffsMaxAmount>10</techHediffsMaxAmount>
+                </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+                <xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]</xpath>
+                <value>
+                    <techHediffsMaxAmount>10</techHediffsMaxAmount>
+                </value>
+            </nomatch>
+        </nomatch>
+    </Operation>
+
+    <!-- <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/techHediffsMaxAmount</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/techHediffsMaxAmount</xpath>
+            <value>
+                <techHediffsMaxAmount>8</techHediffsMaxAmount>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]</xpath>
+            <value>
+                <techHediffsMaxAmount>8</techHediffsMaxAmount>
+            </value>
+        </nomatch>
+    </Operation> -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/techHediffsRequired</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]</xpath>
+            <value>
+                <techHediffsRequired />
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/techHediffsRequired</xpath>
+        <value>
+            <li>Painstopper</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]</xpath>
+        <value>
+            <techHediffsDisallowTags>
+                <li>PainCauser</li>
+                <li>Joywire</li>
+                <li>DrillArm</li>
+            </techHediffsDisallowTags>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/biocodeWeaponChance</xpath>
+        <value>
+            <biocodeWeaponChance>1</biocodeWeaponChance>
+        </value>
+    </Operation>
+
+    <!-- Trooper -->
+
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Trooper"]</xpath>
+        <attribute>Name</attribute>
+        <value>EmpireFighterTrooper</value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Trooper"]/specificApparelRequirements/li[bodyPartGroup="UpperHead"]</xpath>
+        <value>
+            <requiredTag>IndustrialMilitaryBasic</requiredTag>
+        </value>
+    </Operation>
+
+    <!-- Janissary -->
+
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Janissary"]</xpath>
+        <attribute>Name</attribute>
+        <value>EmpireFighterJanissary</value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Janissary"]/techHediffsTags</xpath>
+        <value>
+            <li>Advanced</li>
+        </value>
+    </Operation>
+
+    <!-- Champion -->
+
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]</xpath>
+        <attribute>Name</attribute>
+        <value>EmpireFighterChampion</value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]</xpath>
+        <value>
+            <specificApparelRequirements>
+                <li>
+                    <bodyPartGroup>UpperHead</bodyPartGroup>
+                    <requiredTag>IndustrialMilitaryAdvanced</requiredTag>
+                </li>
+            </specificApparelRequirements>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]</xpath>
+        <value>
+            <techHediffsMoney>4000~9000</techHediffsMoney>
+        </value>
+    </Operation>
+
+    <!-- Grenadier -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/techHediffsTags</xpath>
+        <value>
+            <li>Advanced</li>
+        </value>
+    </Operation>
+
+    <!-- Cataphract Base -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[@Name="CataphractBase"]</xpath>
+        <value>
+            <itemQuality>Excellent</itemQuality>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[@Name="CataphractBase"]/apparelMoney</xpath>
+        <value>
+            <apparelMoney>7000~150000</apparelMoney>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PawnKindDef[@Name="CataphractBase"]/techHediffsRequired</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[@Name="CataphractBase"]</xpath>
+            <value>
+                <techHediffsRequired />
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[FSF] Advanced Bionics Expansion</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[@Name="CataphractBase"]/techHediffsRequired</xpath>
+            <value>
+                <li>BionicEye</li>
+                <li>BionicEye</li>
+                <li>BionicLeg</li>
+                <li>BionicLeg</li>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[FSF] Advanced Bionics Expansion</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[@Name="CataphractBase"]/techHediffsRequired</xpath>
+            <value>
+                <li>BionicArm</li>
+                <li>BionicArm</li>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[@Name="CataphractBase"]/techHediffsMaxAmount</xpath>
+        <value>
+            <techHediffsMaxAmount>25</techHediffsMaxAmount>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[@Name="CataphractBase"]/techHediffsMoney</xpath>
+        <value>
+            <techHediffsMoney>7000~20000</techHediffsMoney>
+        </value>
+    </Operation>
+
+    <!-- Cataphract -->
+
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]</xpath>
+        <attribute>Name</attribute>
+        <value>EmpireFighterCataphract</value>
+    </Operation>
+
+    <!-- Stellic Guard Base -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/itemQuality</xpath>
+        <value>
+            <itemQuality>Masterwork</itemQuality>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/weaponMoney</xpath>
+        <value>
+            <weaponMoney>3000~4000</weaponMoney>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/techHediffsRequired</xpath>
+        <value>
+            <li>Coagulator</li>
+            <li>HealingEnhancer</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Expanded Prosthetics and Organ Engineering - Forked</li>
+            <li>EPOE-Forked: Expanded Prosthetics and Organ Engineering - Forked</li>
+            <li>Expanded Prosthetics, Implants and Augmentations</li>
+            <li>EPOE-Forked: Legacy mode</li>
+            <li>[FSF] Advanced Bionics Expansion</li>
+            <li>EPOE 1.6 Update (Expanded Prosthetics and Organ Engineering)</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/techHediffsRequired</xpath>
+        <value>
+            <li>BionicStomach</li>
+            <li>BionicHeart</li>
+            <li>Immunoenhancer</li>
+            <li>Immunoenhancer</li>
+        </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Expanded Prosthetics and Organ Engineering - Forked</li>
+            <li>EPOE-Forked: Expanded Prosthetics and Organ Engineering - Forked</li>
+            <li>Expanded Prosthetics, Implants and Augmentations</li>
+            <li>EPOE-Forked: Legacy mode</li>
+            <li>EPOE 1.6 Update (Expanded Prosthetics and Organ Engineering)</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/techHediffsRequired</xpath>
+        <value>
+            <li>BionicStomach</li>
+        </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[FSF] Advanced Bionics Expansion</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/techHediffsRequired</xpath>
+        <value>
+            <li>BionicLeg</li>
+            <li>BionicLeg</li>
+            <li>BionicEar</li>
+            <li>BionicEar</li>
+            <li>BionicJaw</li>
+            <li>BionicSpine</li>
+        </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[FSF] Vanilla Bionics Expansion</li>
+            <li>[FSF] Advanced Bionics Expansion</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/techHediffsRequired</xpath>
+        <value>
+            <li>BionicArm</li>
+            <li>BionicArm</li>
+        </value>
+        </nomatch>
+    </Operation>
+
+    <!-- Empire Fighter StellicGuard Ranged -->
+
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]</xpath>
+        <attribute>Name</attribute>
+        <value>EmpireFighterStellicGuardRanged</value>
+    </Operation>
+
+    <!-- Empire Fighter StellicGuard Ranged -->
+
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]</xpath>
+        <attribute>Name</attribute>
+        <value>EmpireFighterStellicGuardMelee</value>
+    </Operation>
+</Patch>

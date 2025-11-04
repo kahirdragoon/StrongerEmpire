@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>The Empire strikes back</name>
+    <author>KahirDragoon</author>
+    <packageId>kahirDragoon.strongerempire</packageId>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <modVersion>1.2.4</modVersion>
+    <description>Make the empire raids harder by giving raiders bionics, drugs and other things.
+Gives the empire better equipment and bionics.
+
+Biotech Support (configurable in Mod Settings)
+Be ready to fight the empires own genetic super soldiers.
+
+The empire now also starts genemodding their pawns and creating super soliders. Combat related genes will be added to their Xenotypes. Also negative genes will be added to balance out the metabilic cost. 
+The higher your wealth the more genes are added. The genes are handselected to give some form of advantage during battle.
+
+VRE Hussar Support
+Also inlcudes the new Hussar genes for the empires gene experiments.
+
+Supported bionic mods
+There is support for some of the bigger bionic mods to give the empire more power. If any of the following mods are installed, better bionics are distrubited to the epmires pawn. 
+Starting with the Stellic Defender and Warde getting the improved set of bionics. The cataprhact get the old Stellic bionics while the old Cataphract bionics getting passed down to champions and janissaries.
+- Integrated Implants
+- EPOE-forked
+- Advanced Bionics Expanded
+- Vanilla Bionics Expanded
+- RSBE
+- MSE2
+(For maximum implants on empire pawns use the first three, but all add something)
+
+Other supported Mods
+- VRE-Empires
+- Eltex Weapons
+    </description>
+    <modDependencies>
+        <li>
+			<packageId>Ludeon.RimWorld.Royalty</packageId>
+			<displayName>Royalty</displayName>
+		</li>
+    </modDependencies>
+    <loadAfter>
+        <li>Ludeon.RimWorld.Royalty</li>
+        <li>Ludeon.RimWorld.Biotech</li>
+        <li>vanillaracesexpanded.hussar</li>
+        <li>frozensnowfox.vanillabionicsexpansion</li>
+        <li>frozensnowfox.advancedbionicsexpansion</li>
+        <li>vat.epoeforked</li>
+        <li>oskarpotocki.vfe.empire</li>
+        <li>oskarpotocki.vfe.deserters</li>
+        <li>wara.toomanymods</li>
+        <li>mse2.core</li>
+    </loadAfter>
+</ModMetaData>

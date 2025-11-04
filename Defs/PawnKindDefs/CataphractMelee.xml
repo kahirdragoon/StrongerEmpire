@@ -1,0 +1,57 @@
+<Defs>
+    <PawnKindDef ParentName="CataphractBase" Name="EmpireFighterCataphractMelee">
+        <defName>Empire_Fighter_CataphractMelee</defName>
+        <label>cataphract</label>
+        <royalTitleChance>0.1</royalTitleChance>
+        <titleSelectOne>
+            <li>Freeholder</li>
+            <li>Yeoman</li>
+        </titleSelectOne>
+        <combatPower>150</combatPower>
+        <weaponTags>
+            <li>UltratechMelee</li>
+        </weaponTags>
+        <weaponMoney>2000~3000</weaponMoney>
+        <apparelColor>(250,250,250)</apparelColor>
+        <apparelRequired>
+            <li>Apparel_ArmorHelmetCataphract</li>
+            <li>Apparel_ArmorCataphract</li>
+            <li>Apparel_ShieldBelt</li>
+        </apparelRequired>
+        <specificApparelRequirements Inherit="False">
+            <li>
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+                <stuff>Synthread</stuff>
+            </li>
+            <li>
+                <bodyPartGroup>Legs</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+                <stuff>Synthread</stuff>
+            </li>
+        </specificApparelRequirements>
+        <techHediffsTags>
+            <li>Advanced</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <techHediffsRequired>
+            <li>ArmorskinGland</li>
+        </techHediffsRequired>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>8~12</range>
+            </li>
+        </skills>
+        <initialWillRange>4~6</initialWillRange>
+        <initialResistanceRange>17~26</initialResistanceRange>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.03</Neanderthal>
+                <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.4</Hussar>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0.03</Genie>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+</Defs>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    
+    <!-- Champion -->
+
+    <!-- <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/apparelRequired</xpath>
+        <value>
+            <li>Apparel_PackJump</li>
+        </value>
+    </Operation> -->
+
+    <!-- Cataphract -->
+    <!-- <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]/apparelRequired</xpath>
+        <value>
+            <li>Apparel_PackJump</li>
+        </value>
+    </Operation> -->
+
+    <!-- <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_CataphractMelee"]/apparelRequired</xpath>
+        <value>
+            <li>Apparel_PackJump</li>
+        </value>
+    </Operation> -->
+
+    <!-- Stellic Guard -->
+
+    <!-- <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/apparelRequired</xpath>
+        <value>
+            <li>Apparel_PackJump</li>
+        </value>
+    </Operation> -->
+</Patch>

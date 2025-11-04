@@ -1,0 +1,1 @@
+Adds support for Rimmefeller to pretty much all Things that can be refueled by chemfuel. Also should work for everything that produces Chemfuel the same way as the base game Infinite chemreactor

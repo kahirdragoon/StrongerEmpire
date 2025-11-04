@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Cataphract_Hussar"]</xpath>
+        <attribute>Name</attribute>
+        <value>EmpireFighterCataphractHussar</value>
+    </Operation>
+</Patch>

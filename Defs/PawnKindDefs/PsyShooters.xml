@@ -1,0 +1,67 @@
+<Defs>
+    <!-- Psy Jannisary -->
+    <PawnkindDef Name="EmpireFighterJanissaryPsy" ParentName="EmpireFighterJanissary" MayRequire="zal.eltexweaponry">
+        <defName>Empire_Fighter_Janissary_Psy</defName>
+        <label>psy janissary</label>
+        <combatPower>100</combatPower>
+        <royalTitleChance>1</royalTitleChance>
+        <titleSelectOne>
+            <li>Yeoman</li>
+        </titleSelectOne>
+        <apparelColor>(200,200,200)</apparelColor>
+        <apparelRequired Inherit="False">
+            <li>Apparel_ArmorHelmetReconPrestige</li>
+            <li>Apparel_ArmorReconPrestige</li>
+            <li>Apparel_PsyfocusShirt</li>
+        </apparelRequired>
+        <weaponTags Inherit="False">
+            <li>EltexGun</li>
+        </weaponTags>
+        <weaponMoney>1600~2050</weaponMoney>
+        <techHediffsRequired>
+            <li>PsychicSensitizer</li>
+        </techHediffsRequired>
+        <apparelTags>
+            <li>Psychic</li>
+        </apparelTags>
+        <xenotypeSet>
+            <xenotypeChances Inherit="False">
+                <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.03</Neanderthal>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0.1</Genie>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnkindDef>
+
+    <!-- Psy Cataphract -->
+    <PawnkindDef Name="EmpireFighterCataphractPsy" ParentName="EmpireFighterCataphract" MayRequire="zal.eltexweaponry">
+        <defName>Empire_Fighter_Cataphract_Psy</defName>
+        <label>psy cataphract</label>
+        <royalTitleChance>1</royalTitleChance>
+        <titleSelectOne Inherit="False">
+            <li>Yeoman</li>
+        </titleSelectOne>
+        <combatPower>150</combatPower>
+        <apparelColor>(200,200,200)</apparelColor>
+        <apparelRequired Inherit="False">
+            <li>Apparel_ArmorHelmetCataphractPrestige</li>
+            <li>Apparel_ArmorCataphractPrestige</li>
+            <li>Apparel_PsyfocusShirt</li>
+        </apparelRequired>
+        <weaponTags Inherit="False">
+            <li>EltexGun</li>
+        </weaponTags>
+        <weaponMoney>2200~2500</weaponMoney>
+        <techHediffsRequired>
+            <li>PsychicSensitizer</li>
+        </techHediffsRequired>
+        <apparelTags>
+            <li>Psychic</li>
+        </apparelTags>
+        <xenotypeSet>
+            <xenotypeChances Inherit="False">
+                <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.03</Neanderthal>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0.1</Genie>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnkindDef>
+</Defs>

@@ -1,0 +1,44 @@
+<Defs>
+    <!-- Cheaper defenders for settlements -->
+
+    <PawnKindDef ParentName="EmpireFighterTrooper">
+        <defName>Empire_Fighter_Trooper_Settlement</defName>
+        <combatPower>20</combatPower>
+    </PawnKindDef>
+    <PawnKindDef ParentName="EmpireFighterJanissary">
+        <defName>Empire_Fighter_Janissary_Settlement</defName>
+        <combatPower>35</combatPower>
+    </PawnKindDef>
+    <PawnKindDef ParentName="EmpireFighterJanissaryPsy" MayRequire="zal.eltexweaponry">
+        <defName>Empire_Fighter_Janissary_Psy_Settlement</defName>
+        <combatPower>35</combatPower>
+    </PawnKindDef>
+    <PawnKindDef ParentName="EmpireFighterChampion">
+        <defName>Empire_Fighter_Champion_Settlement</defName>
+        <combatPower>35</combatPower>
+    </PawnKindDef>
+    <PawnKindDef ParentName="EmpireFighterCataphract">
+        <defName>Empire_Fighter_Cataphract_Settlement</defName>
+        <combatPower>55</combatPower>
+    </PawnKindDef>
+    <PawnKindDef ParentName="EmpireFighterCataphractPsy" MayRequire="zal.eltexweaponry">
+        <defName>Empire_Fighter_Cataphract_Psy_Settlement</defName>
+        <combatPower>55</combatPower>
+    </PawnKindDef>
+    <PawnKindDef ParentName="EmpireFighterCataphractMelee">
+        <defName>Empire_Fighter_CataphractMelee_Settlement</defName>
+        <combatPower>55</combatPower>
+    </PawnKindDef>
+    <PawnKindDef ParentName="EmpireFighterStellicGuardRanged">
+        <defName>Empire_Fighter_StellicGuardRanged_Settlement</defName>
+        <combatPower>65</combatPower>
+    </PawnKindDef>
+    <PawnKindDef ParentName="EmpireFighterStellicGuardMelee">
+        <defName>Empire_Fighter_StellicGuardMelee_Settlement</defName>
+        <combatPower>65</combatPower>
+    </PawnKindDef>
+    <PawnKindDef ParentName="EmpireFighterCataphract" MayRequire="wara.toomanymods">
+        <defName>Empire_Fighter_Cataphract_Hussar_Settlement</defName>
+        <combatPower>55</combatPower>
+    </PawnKindDef>
+</Defs>

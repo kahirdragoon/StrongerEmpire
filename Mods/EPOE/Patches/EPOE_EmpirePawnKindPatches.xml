@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Janissary -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Janissary"]</xpath>
+        <value>
+            <techHediffsRequired>
+                <li>BionicEye</li>
+                <li>BionicEye</li>
+                <li>BionicLeg</li>
+                <li>BionicLeg</li>
+                <li>BionicArm</li>
+                <li>BionicArm</li>
+            </techHediffsRequired>
+        </value>
+    </Operation>
+
+    <!-- Champion -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/techHediffsRequired</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]</xpath>
+            <value>
+                <techHediffsRequired />
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]</xpath>
+        <value>
+            <techHediffsRequired>
+                <li>BionicEye</li>
+                <li>BionicEye</li>
+                <li>BionicLeg</li>
+                <li>BionicLeg</li>
+                <li>BionicArm</li>
+                <li>BionicArm</li>
+            </techHediffsRequired>
+        </value>
+    </Operation>
+
+    <!-- Grenadier -->
+     
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/techHediffsRequired</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]</xpath>
+            <value>
+                <techHediffsRequired />
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/techHediffsRequired</xpath>
+        <value>
+            <li>AdrenalineRib</li>
+            <li>BionicEar</li>
+            <li>BionicEar</li>
+            <li>BionicJaw</li>
+            <li>BionicHeart</li>
+            <li>BionicSpine</li>
+            <li>BionicStomach</li>
+            <li>Immunoenhancer</li>
+            <li>Immunoenhancer</li>
+            <li>Coagulator</li>
+            <li>HealingEnhancer</li>
+            <li>ExoskeletonSuit</li>
+        </value>
+    </Operation>
+
+    <!-- Cataphract -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PawnKindDef[@Name="CataphractBase"]/techHediffsRequired</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[@Name="CataphractBase"]</xpath>
+            <value>
+                <techHediffsRequired />
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[@Name="CataphractBase"]/techHediffsRequired</xpath>
+        <value>
+            <li>AdrenalineRib</li>
+            <li>BionicEar</li>
+            <li>BionicEar</li>
+            <li>BionicJaw</li>
+            <li>BionicHeart</li>
+            <li>BionicSpine</li>
+            <li>BionicStomach</li>
+            <li>Immunoenhancer</li>
+            <li>Immunoenhancer</li>
+            <li>Coagulator</li>
+            <li>HealingEnhancer</li>
+            <li>ExoskeletonSuit</li>
+        </value>
+    </Operation>
+
+    <!-- Stellic Guard -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[FSF] Advanced Bionics Expansion</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/techHediffsRequired</xpath>
+        <value>
+            <li>AdvancedBionicSpine</li>
+            <li>AdvancedBionicEar</li>
+            <li>AdvancedBionicEar</li>
+            <li>AdvancedBionicJaw</li>
+        </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medical System Expansion 2</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/techHediffsRequired</xpath>
+        <value>
+            <li>AdvancedPowerArm</li>
+            <li>AdvancedPowerArm</li>
+            <li>AdvancedBionicLeg</li>
+            <li>AdvancedBionicLeg</li>
+        </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/techHediffsRequired</xpath>
+        <value>
+            <li>AdrenalineRib</li>
+            <li>CoagulatorRib</li>
+            <li>CoolerRib</li>
+            <li>HeaterRib</li>
+            <li>MedicalRib</li>
+            <li>PainkillerRib</li>
+            <li>RespirationRib</li>
+            <li>WakeUpRib</li>
+            <li>EPIA_TacticalBionicEye</li>
+            <li>EPIA_TacticalBionicEye</li>
+            <li>EPIA_ProtectiveExoskeleton</li>
+            <li>EPIA_AuxiliaryAI_Combat</li>
+        </value>
+    </Operation>
+
+    <!-- Giving them the correct ai directly doesnt work-->
+    <!-- <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]</xpath>
+        <value>
+            <techHediffsRequired />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]/techHediffsRequired</xpath>
+        <value>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]</xpath>
+        <value>
+            <techHediffsRequired />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]/techHediffsRequired</xpath>
+        <value>
+            <li>EPIA_AuxiliaryAI_Combat</li>
+        </value>
+    </Operation> -->
+</Patch>

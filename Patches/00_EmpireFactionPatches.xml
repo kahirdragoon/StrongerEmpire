@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- adding cataphract melee to all groupmker where cataphract is-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li/guards[Empire_Fighter_Cataphract]</xpath>
+        <value>
+            <Empire_Fighter_CataphractMelee>1.5</Empire_Fighter_CataphractMelee>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li/options[Empire_Fighter_Cataphract]</xpath>
+        <value>
+            <Empire_Fighter_CataphractMelee>2</Empire_Fighter_CataphractMelee>
+        </value>
+    </Operation>
+
+    <!-- increasing settlemend defenders and adding stellic guard-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+        <value>
+            <options>
+                <Empire_Fighter_Trooper_Settlement>8</Empire_Fighter_Trooper_Settlement>
+                <Empire_Fighter_Janissary_Settlement>5</Empire_Fighter_Janissary_Settlement>
+                <Empire_Fighter_Champion_Settlement>4</Empire_Fighter_Champion_Settlement>
+                <Empire_Fighter_Cataphract_Settlement>2</Empire_Fighter_Cataphract_Settlement>
+                <Empire_Fighter_Cataphract_Hussar_Settlement MayRequire="wara.toomanymods">2</Empire_Fighter_Cataphract_Hussar_Settlement>
+                <Empire_Fighter_CataphractMelee_Settlement>3</Empire_Fighter_CataphractMelee_Settlement>
+                <Empire_Fighter_StellicGuardRanged_Settlement>0.5</Empire_Fighter_StellicGuardRanged_Settlement>
+                <Empire_Fighter_StellicGuardMelee_Settlement>0.5</Empire_Fighter_StellicGuardMelee_Settlement>
+            </options>
+        </value>
+    </Operation>
+</Patch>

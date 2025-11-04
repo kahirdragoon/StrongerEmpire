@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Janissary -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Janissary"]</xpath>
+        <value>
+            <techHediffsRequired>
+                <li>BionicEye</li>
+                <li>BionicEye</li>
+                <li>BionicLeg</li>
+                <li>BionicLeg</li>
+                <li>BionicArm</li>
+                <li>BionicArm</li>
+            </techHediffsRequired>
+        </value>
+    </Operation>
+
+    <!-- Champion -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PawnKindDef[@Name="CataphractBase"]/techHediffsRequired</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[@Name="CataphractBase"]</xpath>
+            <value>
+                <techHediffsRequired />
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]</xpath>
+        <value>
+            <techHediffsRequired>
+                <li>BionicEye</li>
+                <li>BionicEye</li>
+                <li>BionicLeg</li>
+                <li>BionicLeg</li>
+                <li>BionicArm</li>
+                <li>BionicArm</li>
+            </techHediffsRequired>
+        </value>
+    </Operation>
+
+    <!-- Grenadier -->
+     
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/techHediffsRequired</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]</xpath>
+            <value>
+                <techHediffsRequired />
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/techHediffsRequired</xpath>
+        <value>
+            <li>FSFBionicPowerArm</li>
+            <li>FSFBionicPowerArm</li>
+            <li>BionicEar</li>
+            <li>BionicEar</li>
+            <li>BionicJaw</li>
+            <li>BionicHeart</li>
+            <li>BionicSpine</li>
+            <li>BionicStomach</li>
+            <li>Immunoenhancer</li>
+            <li>Immunoenhancer</li>
+            <li>Coagulator</li>
+            <li>HealingEnhancer</li>
+            <li>FSFImplantMechanitesSensory</li>
+            <li>FSFImplantTorsoRespirator</li>
+        </value>
+    </Operation>
+
+    <!-- Cataphract Base-->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[@Name="CataphractBase"]/techHediffsRequired</xpath>
+        <value>
+            <li>FSFBionicPowerArm</li>
+            <li>FSFBionicPowerArm</li>
+            <li>BionicEar</li>
+            <li>BionicEar</li>
+            <li>BionicJaw</li>
+            <li>BionicHeart</li>
+            <li>BionicSpine</li>
+            <li>BionicStomach</li>
+            <li>Immunoenhancer</li>
+            <li>Immunoenhancer</li>
+            <li>Coagulator</li>
+            <li>HealingEnhancer</li>
+            <li>FSFImplantMechanitesSensory</li>
+            <li>FSFImplantTorsoRespirator</li>
+        </value>
+    </Operation>
+
+    <!-- Stellic Guard Base -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/techHediffsRequired</xpath>
+        <value>
+            <li>FSFAdvBionicSpine</li>
+            <li>FSFAdvBionicStomach</li>
+            <li>FSFAdvBionicHeart</li>
+            <li>FSFAdvBionicLung</li>
+            <li>FSFAdvBionicLung</li>
+            <li>FSFAdvBionicLiver</li>
+            <li>FSFAdvBionicKidney</li>
+            <li>FSFAdvBionicKidney</li>
+            <li>FSFAdvBionicEye</li>
+            <li>FSFAdvBionicEye</li>
+            <li>FSFAdvBionicEar</li>
+            <li>FSFAdvBionicEar</li>
+            <li>FSFAdvBionicJaw</li>
+            <li>FSFAdvBionicPowerArm</li>
+            <li>FSFAdvBionicPowerArm</li>
+            <li>FSFAdvBionicPowerLeg</li>
+            <li>FSFAdvBionicPowerLeg</li>
+            <li>FSFImplantEMPShield</li>
+            <li>FSFImplantMechanitesSensory</li>
+            <li>FSFImplantTorsoRespirator</li>
+            <li>FSFAIModuleCore</li>
+            <li>FSFAIModuleMelee</li>
+            <li>FSFAIModuleShooting</li>
+        </value>
+    </Operation>
+</Patch>
