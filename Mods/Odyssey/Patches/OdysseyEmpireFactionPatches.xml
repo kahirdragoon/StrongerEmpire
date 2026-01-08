@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Make Empire raid in space-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName="Empire"]/allowedArrivalTemperatureRange</xpath>
+        <value>
+            <allowedArrivalTemperatureRange>-80~45
+            </allowedArrivalTemperatureRange>
+        </value>
+    </Operation>
+</Patch>

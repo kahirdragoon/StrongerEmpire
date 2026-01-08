@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <!-- adding cataphract melee to all groupmker where cataphract is-->
+    <!-- adding cataphract melee to all groupmakers where cataphract is-->
     <Operation Class="PatchOperationAdd">
         <xpath>
             Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li/guards[Empire_Fighter_Cataphract]</xpath>
