@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <RuleDef>
+        <defName>Empire_CannonDefense</defName>
+        <symbol>empire_cannondefense</symbol>
+        <resolvers>
+            <li Class="StrongerEmpire.SymbolResolver_CannonDefense" />
+        </resolvers>
+    </RuleDef>
+
+    <GenStepDef>
+        <defName>Empire_TurretUpgrade</defName>
+        <order>405</order>
+        <genStep Class="StrongerEmpire.Genstep_TurrentUpgrade" />
+    </GenStepDef>
+</Defs>

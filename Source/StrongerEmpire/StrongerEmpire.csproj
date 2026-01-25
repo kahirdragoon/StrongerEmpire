@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net481</TargetFramework>
-    <LangVersion>7.3</LangVersion>
+    <LangVersion>latest</LangVersion>
     <OutputType>Library</OutputType>
     <AssemblyName>StrongerEmpire</AssemblyName>
     <OutputPath>..\..\$(Configuration)\Assemblies\</OutputPath>

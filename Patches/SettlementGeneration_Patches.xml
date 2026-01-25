@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RuleDef[defName="Settlement"]/resolvers</xpath>
+        <value>
+            <li Class="StrongerEmpire.SymbolResolver_SettlementEmpire">
+                <selectionWeight>9999</selectionWeight>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/MapGeneratorDef[defName="Base_Faction"]/genSteps</xpath>
+        <value>
+            <li>Empire_TurretUpgrade</li>
+        </value>
+    </Operation>
+</Patch>
