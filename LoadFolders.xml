@@ -17,5 +17,6 @@
     <li IfModActive="zal.eltexweaponry">Mods/EltexWeaponary</li>
     <li IfModActive="wara.toomanymods">Mods/TooManyCombat</li>
     <li IfModActive="mse2.core">Mods/MSE2</li>
+    <li IfModActive="fivefive.royalsanguophages">Mods/RoyalSanguophages</li>
   </v1.6>
 </loadFolders>

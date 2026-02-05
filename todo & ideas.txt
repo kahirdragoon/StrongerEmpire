@@ -1,1 +1,2 @@
 - support for altered Carbon (add Quality genes)
+- support for rebuild walls and doors

@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Configuration>
   <Excluded>
+    <exclude>.git</exclude>
+    <exclude>.vs</exclude>
     <exclude>About\BionicSupportStellic.png</exclude>
     <exclude>About\BionicSupportStellicRaw.png</exclude>
     <exclude>About\BiotechSupport.png</exclude>
@@ -13,17 +15,12 @@
     <exclude>About\PreviewWithText.png</exclude>
     <exclude>About\PublishedFileId.txt</exclude>
     <exclude>About\Settings.png</exclude>
-    <exclude>About\SteamDescription.txt</exclude>
-    <exclude>Source\.gitignore</exclude>
     <exclude>Source\.rimignore</exclude>
     <exclude>Source\.vs</exclude>
-    <exclude>Source\StrongerEmpire\bin</exclude>
     <exclude>Source\StrongerEmpire\obj</exclude>
     <exclude>Source\StrongerEmpire_Biotech\.vs</exclude>
     <exclude>Source\StrongerEmpire_Biotech\bin</exclude>
     <exclude>Source\StrongerEmpire_Biotech\obj</exclude>
-    <exclude>Source\StrongerEmpire_VREHussar\.vs</exclude>
-    <exclude>Source\StrongerEmpire_VREHussar\bin</exclude>
     <exclude>Source\StrongerEmpire_VREHussar\obj</exclude>
   </Excluded>
 </Configuration>

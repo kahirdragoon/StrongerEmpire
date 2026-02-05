@@ -4,6 +4,10 @@
 #Todos
 # patch VPE psycaster with bionics
 
+1.2.6
+- increased settlement defense
+- support for VFE Security: settlements are defended by Charge Turrents and Charge Railgun Turrets
+
 1.2.5
 - fixed error when Odyssey isnt loaded
 

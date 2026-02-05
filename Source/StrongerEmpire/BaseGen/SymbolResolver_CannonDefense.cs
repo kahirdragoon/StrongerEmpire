@@ -18,13 +18,13 @@ public class SymbolResolver_CannonDefense : SymbolResolver
         int extraX = ExtraPerSide(rect.Width);
         int extraZ = ExtraPerSide(rect.Height);
 
-        List<IntVec3> positions = new List<IntVec3>
-    {
-        new IntVec3(rect.minX, 0, rect.minZ),
-        new IntVec3(rect.minX, 0, rect.maxZ),
-        new IntVec3(rect.maxX, 0, rect.minZ),
-        new IntVec3(rect.maxX, 0, rect.maxZ),
-    };
+        List<IntVec3> positions =
+        [
+            new IntVec3(rect.minX, 0, rect.minZ),
+            new IntVec3(rect.minX, 0, rect.maxZ),
+            new IntVec3(rect.maxX, 0, rect.minZ),
+            new IntVec3(rect.maxX, 0, rect.maxZ),
+        ];
 
         AddSidePositionsX(rect.minX, rect.maxX, rect.maxZ, extraX, positions);
         AddSidePositionsX(rect.minX, rect.maxX, rect.minZ, extraX, positions);
@@ -35,7 +35,7 @@ public class SymbolResolver_CannonDefense : SymbolResolver
         {
             if (pos.InBounds(map) && pos.Standable(map))
             {
-                Thing autocannon = ThingMaker.MakeThing(VanillaThingDefOf.Turret_Autocannon);
+                Thing autocannon = ThingMaker.MakeThing(EmpireThingDefOf.Turret_Autocannon);
                 autocannon.SetFaction(rp.faction);
                 GenSpawn.Spawn(autocannon, pos, map);
             }
@@ -72,5 +72,4 @@ public class SymbolResolver_CannonDefense : SymbolResolver
             positions.Add(new IntVec3(x, 0, (minZ + 2 * maxZ) / 3));
         }
     }
-
 }

@@ -23,9 +23,9 @@ public class Genstep_TurrentUpgrade : GenStep
         if (chargeTurretDef == null && chargeRailgunDef == null)
             return;
         
-        MapGenerator.TryGetVar<CellRect>("SettlementRect", out var settlementRect);
+        MapGenerator.TryGetVar("SettlementRect", out CellRect settlementRect);
         if (settlementRect == null || settlementRect.IsEmpty)
-            if (!MapGenerator.TryGetVar<CellRect>("RectOfInterest", out settlementRect))
+            if (!MapGenerator.TryGetVar("RectOfInterest", out settlementRect))
                 return;
 
         List<Thing> turretToReplace = [];
@@ -36,9 +36,9 @@ public class Genstep_TurrentUpgrade : GenStep
             if (!c.InBounds(map)) continue;
             foreach (Thing t in map.thingGrid.ThingsListAtFast(c))
             {
-                if (chargeTurretDef != null && t.def.defName == ThingDefOf.Turret_MiniTurret.defName)
+                if (chargeTurretDef != null && t.def.defName == RimWorld.ThingDefOf.Turret_MiniTurret.defName)
                     turretToReplace.Add(t);
-                if(chargeRailgunDef != null && t.def.defName == VanillaThingDefOf.Turret_Autocannon.defName)
+                if(chargeRailgunDef != null && t.def.defName == EmpireThingDefOf.Turret_Autocannon.defName)
                     autocannonToReplace.Add(t);
             }
         }
@@ -51,7 +51,7 @@ public class Genstep_TurrentUpgrade : GenStep
     {
         foreach (var old in buildingsToReplace)
         {
-            var stuff = replacementDef.CostStuffCount > 0 ? ThingDefOf.Plasteel : null;
+            var stuff = replacementDef.CostStuffCount > 0 ? RimWorld.ThingDefOf.Plasteel : null;
             Thing replacement = ThingMaker.MakeThing(replacementDef, stuff);
             replacement.SetFaction(old.Faction);
             replacement.HitPoints = replacement.MaxHitPoints;
