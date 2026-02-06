@@ -4,6 +4,12 @@
 #Todos
 # patch VPE psycaster with bionics
 
+1.2.7
+- support for Royal Sanguaphages
+    - empire settlements can have DeathrestChambers and Sanguaphages
+- patching only fighters
+- moving some stuff to a PawnGenerator patch so all fighter Empire pawns can spawn with the enhancements (excepts the genes)
+
 1.2.6
 - increased settlement defense
 - support for VFE Security: settlements are defended by Charge Turrents and Charge Railgun Turrets

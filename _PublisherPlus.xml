@@ -15,12 +15,7 @@
     <exclude>About\PreviewWithText.png</exclude>
     <exclude>About\PublishedFileId.txt</exclude>
     <exclude>About\Settings.png</exclude>
-    <exclude>Source\.rimignore</exclude>
-    <exclude>Source\.vs</exclude>
-    <exclude>Source\StrongerEmpire\obj</exclude>
-    <exclude>Source\StrongerEmpire_Biotech\.vs</exclude>
-    <exclude>Source\StrongerEmpire_Biotech\bin</exclude>
-    <exclude>Source\StrongerEmpire_Biotech\obj</exclude>
-    <exclude>Source\StrongerEmpire_VREHussar\obj</exclude>
+    <exclude>Source</exclude>
+    <exclude>todo &amp; ideas.txt</exclude>
   </Excluded>
 </Configuration>

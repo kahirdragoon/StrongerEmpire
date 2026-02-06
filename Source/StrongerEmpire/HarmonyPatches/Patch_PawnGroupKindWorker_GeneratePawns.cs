@@ -36,10 +36,11 @@ public static class Patch_PawnGroupKindWorker_GeneratePawns
             return;
         }
         
-        Log.Message($"[{Initialize.ModName}]: Modifying pawns for faction {parms.faction.def.defName} with points {parms.points}");
-
         foreach (var pawn in outPawns)
         {
+            if (!pawn.kindDef.isFighter)
+                continue;
+
             if (StrongerEmpireMod.settings.enableMilitaryTraining)
                 PawnModificator.AddMilitaryTraining(pawn);
 

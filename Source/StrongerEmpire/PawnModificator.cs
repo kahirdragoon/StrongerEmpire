@@ -11,19 +11,9 @@ namespace StrongerEmpire
 {
     public static class PawnModificator
     {
-        private static HediffDef militaryTrainingHediffDef;
-        private static ThingDef luciferiumDef;
-
         internal static void AddMilitaryTraining(Pawn pawn)
         {
-            pawn.health.AddHediff(GetMilitaryTrainingHediffDef());
-        }
-
-        private static HediffDef GetMilitaryTrainingHediffDef()
-        {
-            if (militaryTrainingHediffDef == null)
-                militaryTrainingHediffDef = HediffDef.Named("MilitaryTraining");
-            return militaryTrainingHediffDef;
+            pawn.health.GetOrAddHediff(EmpireDefOf.Empire_MilitaryTraining);
         }
 
         internal static void AddLuciferium(Pawn pawn)
@@ -33,29 +23,19 @@ namespace StrongerEmpire
                 || !Rand.Chance(StrongerEmpireMod.settings.luciferiumChance))
                 return;
 
-            ThingWithComps luci = (ThingWithComps)ThingMaker.MakeThing(GetLuciferiumDef());
-
-            luci.stackCount = 1;
-            luci.Ingested(pawn, 0f);
-        }
-
-        private static ThingDef GetLuciferiumDef()
-        {
-            if (luciferiumDef == null)
-                luciferiumDef = ThingDef.Named("Luciferium");
-            return luciferiumDef;
+            pawn.health.GetOrAddHediff(EmpireDefOf.LuciferiumAddiction);
+            pawn.health.GetOrAddHediff(EmpireDefOf.LuciferiumHigh);
         }
 
         internal static void MakeUnwaveringlyLoyal(Pawn pawn)
         {
-            if (pawn.guest != null)
-                pawn.guest.Recruitable = false;
+            pawn.guest?.Recruitable = false;
         }
 
         // Mainly for IntegratedImplants extra arms having ~ 0.1 Serverity when added
         internal static void FixServerity(Pawn pawn)
         {
-            List<Hediff> hediffs = new List<Hediff>();
+            List<Hediff> hediffs = [];
             pawn.health.hediffSet.GetHediffs(ref hediffs, h => h.Severity <= 0.2f && h.def.defName.Contains("Extra"));
             foreach (var hediff in hediffs)
                 hediff.Severity = 1f;

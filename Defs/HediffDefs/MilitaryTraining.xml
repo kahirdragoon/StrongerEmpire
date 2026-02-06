@@ -1,6 +1,29 @@
 <Defs>
+    <!-- Deprecated left for older saves. Remove in the future. use Hediff with prefix instead -->
     <HediffDef>
         <defName>MilitaryTraining</defName>
+        <label>military training</label>
+        <description>This pawn received miltary combat training in the empire.</description>
+        <hediffClass>Hediff</hediffClass>
+        <tendable>false</tendable>
+        <isBad>false</isBad>
+        <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+        <stages>
+            <li>
+                <statFactors>
+                    <MeleeDamageFactor>1.05</MeleeDamageFactor>
+                    <MeleeHitChance>1.1</MeleeHitChance>
+                    <MeleeDodgeChance>1.1</MeleeDodgeChance>
+                    <ShootingAccuracyPawn>1.1</ShootingAccuracyPawn>
+                    <AimingDelayFactor>0.909</AimingDelayFactor> <!-- 1/1.1 -->
+                    <MoveSpeed>1.1</MoveSpeed>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>Empire_MilitaryTraining</defName>
         <label>military training</label>
         <description>This pawn received miltary combat training in the empire.</description>
         <hediffClass>Hediff</hediffClass>

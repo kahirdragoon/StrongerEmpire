@@ -38,7 +38,7 @@ public class Genstep_TurrentUpgrade : GenStep
             {
                 if (chargeTurretDef != null && t.def.defName == RimWorld.ThingDefOf.Turret_MiniTurret.defName)
                     turretToReplace.Add(t);
-                if(chargeRailgunDef != null && t.def.defName == EmpireThingDefOf.Turret_Autocannon.defName)
+                if(chargeRailgunDef != null && t.def.defName == EmpireDefOf.Turret_Autocannon.defName)
                     autocannonToReplace.Add(t);
             }
         }

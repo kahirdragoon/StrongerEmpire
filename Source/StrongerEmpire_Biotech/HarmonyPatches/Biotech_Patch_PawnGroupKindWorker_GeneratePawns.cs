@@ -62,7 +62,7 @@ namespace StrongerEmpire.Biotech
 
             foreach (var pawn in outPawns)
             {
-                if (pawn.genes?.Xenotype is null)
+                if (pawn.genes?.Xenotype is null || !pawn.kindDef.isFighter)
                     continue;
 
                 AddGenes(pawn, numberOfGenesToAdd, genepool, inSpace);
@@ -74,10 +74,10 @@ namespace StrongerEmpire.Biotech
             var plusGenePool = genepool.ProCombatGenes
                 .Where(g => !pawn.genes.HasXenogene(g))
                 .ToList();
-            if (pawn.HasPsylink && !pawn.genes.HasXenogene(SE_GeneDefOf.PsychicAbility_Extreme))
-                plusGenePool.Add(SE_GeneDefOf.PsychicAbility_Extreme);
-            else if(!pawn.genes.HasXenogene(SE_GeneDefOf.PsychicAbility_Deaf))
-                plusGenePool.Add(SE_GeneDefOf.PsychicAbility_Deaf);
+            if (pawn.HasPsylink && !pawn.genes.HasXenogene(EmpireGeneDefOf.PsychicAbility_Extreme))
+                plusGenePool.Add(EmpireGeneDefOf.PsychicAbility_Extreme);
+            else if(!pawn.genes.HasXenogene(EmpireGeneDefOf.PsychicAbility_Deaf))
+                plusGenePool.Add(EmpireGeneDefOf.PsychicAbility_Deaf);
 
             var minusGenePool = genepool.MetaIncreasingGenes
                 .Where(g => !pawn.genes.HasXenogene(g))
@@ -113,12 +113,12 @@ namespace StrongerEmpire.Biotech
             }
 
             // Remove weaker versions of some xenogenes that otherweise would overwrite the stronger ones
-            if (pawn.genes.HasXenogene(SE_GeneDefOf.MaxTemp_LargeIncrease) && pawn.genes.HasXenogene(SE_GeneDefOf.MaxTemp_SmallIncrease))
-                pawn.genes.RemoveGene(pawn.genes.GetGene(SE_GeneDefOf.MaxTemp_SmallIncrease));
-            if (pawn.genes.HasXenogene(SE_GeneDefOf.MinTemp_LargeDecrease) && pawn.genes.HasXenogene(SE_GeneDefOf.MinTemp_SmallDecrease))
-                pawn.genes.RemoveGene(pawn.genes.GetGene(SE_GeneDefOf.MinTemp_SmallDecrease));
-            if (pawn.genes.HasXenogene(SE_GeneDefOf.Robust) && pawn.genes.HasXenogene(SE_GeneDefOf.Delicate))
-                pawn.genes.RemoveGene(pawn.genes.GetGene(SE_GeneDefOf.Delicate));
+            if (pawn.genes.HasXenogene(EmpireGeneDefOf.MaxTemp_LargeIncrease) && pawn.genes.HasXenogene(EmpireGeneDefOf.MaxTemp_SmallIncrease))
+                pawn.genes.RemoveGene(pawn.genes.GetGene(EmpireGeneDefOf.MaxTemp_SmallIncrease));
+            if (pawn.genes.HasXenogene(EmpireGeneDefOf.MinTemp_LargeDecrease) && pawn.genes.HasXenogene(EmpireGeneDefOf.MinTemp_SmallDecrease))
+                pawn.genes.RemoveGene(pawn.genes.GetGene(EmpireGeneDefOf.MinTemp_SmallDecrease));
+            if (pawn.genes.HasXenogene(EmpireGeneDefOf.Robust) && pawn.genes.HasXenogene(EmpireGeneDefOf.Delicate))
+                pawn.genes.RemoveGene(pawn.genes.GetGene(EmpireGeneDefOf.Delicate));
 
             while (minusGenePool.Count > 0 && pawn.genes.Xenogenes.Sum(g => g.def.biostatMet) < 3)
             {
