@@ -6,6 +6,7 @@
 
 1.2.8
 - removed experimental equipment patches which i thought had no effect
+- deprecated MilitaryTraining hediff
 
 1.2.7
 - support for Royal Sanguaphages
