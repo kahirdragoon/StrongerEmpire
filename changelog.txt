@@ -4,6 +4,9 @@
 #Todos
 # patch VPE psycaster with bionics
 
+1.2.8
+- removed experimental equipment patches which i thought had no effect
+
 1.2.7
 - support for Royal Sanguaphages
     - empire settlements can have DeathrestChambers and Sanguaphages

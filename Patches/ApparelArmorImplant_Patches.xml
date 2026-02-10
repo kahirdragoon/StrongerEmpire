@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-    <Operation Class="PatchOperationConditional">
+    <!-- <Operation Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[apparel and (techLevel="Spacer" or techLevel="Ultra")]/apparel[not(layers/li[text()="Belt"] or layers/li[text()="Utility"]) and not(tags)]</xpath>
         <nomatch Class="PatchOperationAdd">
             <xpath>Defs/ThingDef[apparel and (techLevel="Spacer" or techLevel="Ultra")]/apparel[not(layers/li[text()="Belt"] or layers/li[text()="Utility"]) and not(tags)]</xpath>
@@ -39,6 +39,6 @@
                 </value>
             </nomatch>
         </match>
-    </Operation>
+    </Operation> -->
 
 </Patch>
