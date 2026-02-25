@@ -18,5 +18,6 @@
     <li IfModActive="wara.toomanymods">Mods/TooManyCombat</li>
     <li IfModActive="mse2.core">Mods/MSE2</li>
     <li IfModActive="fivefive.royalsanguophages">Mods/RoyalSanguophages</li>
+    <li IfModActive="vanillaexpanded.vaeaccessories">Mods/VAE-Accessories</li>
   </v1.6>
 </loadFolders>

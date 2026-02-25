@@ -1,5 +1,5 @@
 <Defs>
-    <!-- Psy Jannisary -->
+    <!-- Psy Janissary -->
     <PawnkindDef Name="EmpireFighterJanissaryPsy" ParentName="EmpireFighterJanissary" MayRequire="zal.eltexweaponry">
         <defName>Empire_Fighter_Janissary_Psy</defName>
         <label>psy janissary</label>

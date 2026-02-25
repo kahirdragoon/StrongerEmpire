@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
+    <Operation Class="PatchoperationAdd">
+        <xpath>Defs/ThingDef[apparel and (techLevel="Spacer" or techLevel="Ultra" or techLevel="Archotech") and not(comps)]</xpath>
+        <value>
+            <comps></comps>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchoperationAdd">
+        <xpath>Defs/ThingDef[(apparel and (techLevel="Spacer" or techLevel="Ultra" or techLevel="Archotech")) or defName="VAEA_Apparel_RangedShieldBelt"]/comps[not(li[@Class="CompProperties_Biocodable"])]</xpath>
+        <value>
+            <li Class="CompProperties_Biocodable"/>
+        </value>
+    </Operation>
+
+
     <!-- <Operation Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[apparel and (techLevel="Spacer" or techLevel="Ultra")]/apparel[not(layers/li[text()="Belt"] or layers/li[text()="Utility"]) and not(tags)]</xpath>
         <nomatch Class="PatchOperationAdd">

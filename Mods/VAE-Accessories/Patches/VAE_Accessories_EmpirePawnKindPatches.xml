@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Ranged Shield Belt -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[
+            (defName="Empire_Fighter_Janissary" or 
+             defName="Empire_Fighter_Grenadier" or 
+             defName="Empire_Fighter_Cataphract" or 
+             defName="Empire_Fighter_StellicGuardRanged") 
+            and not(apparelRequired)]</xpath>
+        <value>
+            <apparelRequired></apparelRequired>            
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Janissary" or defName="Empire_Fighter_Grenadier" or defName="Empire_Fighter_Cataphract" or defName="Empire_Fighter_StellicGuardRanged"]/apparelRequired[not(li[text()=VAEA_Apparel_RangedShieldBelt])]</xpath>
+        <value>
+            <li>VAEA_Apparel_RangedShieldBelt</li>            
+        </value>
+    </Operation>
+
+</Patch>

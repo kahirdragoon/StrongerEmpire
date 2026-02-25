@@ -11,14 +11,14 @@ using Verse;
 
 namespace StrongerEmpire;
 
-[HarmonyPatch(typeof(PawnGroupKindWorker_Normal))]
-[HarmonyPatch("GeneratePawns", MethodType.Normal)]
-[HarmonyPatch([
-    typeof(PawnGroupMakerParms),
-    typeof(PawnGroupMaker),
-    typeof(List<Pawn>),
-    typeof(bool)
-])]
+//[HarmonyPatch(typeof(PawnGroupKindWorker_Normal))]
+//[HarmonyPatch("GeneratePawns", MethodType.Normal)]
+//[HarmonyPatch([
+//    typeof(PawnGroupMakerParms),
+//    typeof(PawnGroupMaker),
+//    typeof(List<Pawn>),
+//    typeof(bool)
+//])]
 public static class Patch_PawnGroupKindWorker_GeneratePawns
 {
     [HarmonyPostfix] 

@@ -1,2 +1,4 @@
 - support for altered Carbon (add Quality genes)
 - support for rebuild walls and doors
+. Change majority of soldiers to clone soldiers
+- support for Vehicle Raid Framework

@@ -17,9 +17,14 @@ public static class Patch_PawnGenerator_GeneratePawn
     [HarmonyPostfix] 
     public static void Postfix(Pawn __result, PawnGenerationRequest request)
     {
-        if (__result is null || request.Faction?.def != FactionDefOf.Empire || __result.kindDef is null || !__result.kindDef.isFighter)
+        if (__result is null || request.Faction?.def != FactionDefOf.Empire || __result.RaceProps?.IsMechanoid == true)
             return;
-        
+
+        PawnModificator.BioCodeApparel(__result);
+
+        if (!__result.kindDef.isFighter)
+            return;
+
         if (StrongerEmpireMod.settings.enableMilitaryTraining)
             PawnModificator.AddMilitaryTraining(__result);
 
@@ -32,6 +37,7 @@ public static class Patch_PawnGenerator_GeneratePawn
         if(ModsConfig.OdysseyActive && StrongerEmpireMod.settings.uniqueWeaponSpawnChance > 0f)
             PawnModificator.MaybeGiveUniqueWeapon(__result);
 
+        
         PawnModificator.FixServerity(__result);
     }
 }

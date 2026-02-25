@@ -4,6 +4,14 @@
 #Todos
 # patch VPE psycaster with bionics
 
+1.3.0
+- bicode spacer or higher tech appearel from Empire pawns
+- some ranged pawns get Ranged Shield Belts from Vanilla Apparel Expanded — Accessories
+- exclude mechanoids from getting the Military Training Hediff
+
+1.2.9
+- fix EPOE Organic optimizing nanobots having low serverity when spawning on empire pawns
+
 1.2.8
 - removed experimental equipment patches which i thought had no effect
 - deprecated MilitaryTraining hediff

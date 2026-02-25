@@ -36,7 +36,8 @@ namespace StrongerEmpire
         internal static void FixServerity(Pawn pawn)
         {
             List<Hediff> hediffs = [];
-            pawn.health.hediffSet.GetHediffs(ref hediffs, h => h.Severity <= 0.2f && h.def.defName.Contains("Extra"));
+            pawn.health.hediffSet.GetHediffs(ref hediffs, h => (h.Severity <= 0.2f && h.def.defName.Contains("Extra"))
+                                                                || h.def.defName == "EPOE_OrganicOptimized");
             foreach (var hediff in hediffs)
                 hediff.Severity = 1f;
         }
@@ -58,6 +59,15 @@ namespace StrongerEmpire
 
             pawn.equipment.DestroyEquipment(pawnWeapon);
             pawn.equipment.AddEquipment(uniqueWeapon);
+        }
+
+        internal static void BioCodeApparel(Pawn pawn)
+        {
+            foreach (var thing in pawn.apparel.WornApparel)
+            {
+                if(thing?.TryGetComp<CompBiocodable>() is CompBiocodable comp)
+                    comp.CodeFor(pawn);
+            }
         }
     }
 }
