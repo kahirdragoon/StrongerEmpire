@@ -4,6 +4,9 @@
 #Todos
 # patch VPE psycaster with bionics
 
+1.3.1
+- harden bicode apperal patch against errors
+
 1.3.0
 - bicode spacer or higher tech appearel from Empire pawns
 - some ranged pawns get Ranged Shield Belts from Vanilla Apparel Expanded — Accessories
