@@ -2,3 +2,6 @@
 - support for rebuild walls and doors
 . Change majority of soldiers to clone soldiers
 - support for Vehicle Raid Framework
+- give empire sophian styles
+- rework gene distribution
+- tiered raids?

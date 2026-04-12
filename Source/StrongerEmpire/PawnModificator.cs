@@ -63,10 +63,20 @@ namespace StrongerEmpire
 
         internal static void BioCodeApparel(Pawn pawn)
         {
+            if(pawn?.apparel?.WornApparel == null)
+                return;
+
             foreach (var thing in pawn.apparel.WornApparel)
             {
-                if(thing?.TryGetComp<CompBiocodable>() is CompBiocodable comp)
-                    comp.CodeFor(pawn);
+                try
+                {
+                    if (thing?.TryGetComp<CompBiocodable>() is CompBiocodable comp)
+                        comp.CodeFor(pawn);
+                }
+                catch (Exception ex)
+                {
+                    Log.Error($"Error while biocoding apparel {thing?.def?.defName} for pawn {pawn.Name}: {ex}");
+                }
             }
         }
     }
