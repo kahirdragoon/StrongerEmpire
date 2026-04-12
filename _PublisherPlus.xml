@@ -15,6 +15,7 @@
     <exclude>About\PreviewWithText.png</exclude>
     <exclude>About\PublishedFileId.txt</exclude>
     <exclude>About\Settings.png</exclude>
+    <exclude>changelog.txt</exclude>
     <exclude>Source</exclude>
     <exclude>todo &amp; ideas.txt</exclude>
   </Excluded>
