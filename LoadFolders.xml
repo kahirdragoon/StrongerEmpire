@@ -14,6 +14,7 @@
     <li IfModActive="turnovus.submod.backpacksarenotbelts">Mods/PacksAreNotBelts</li>
     <li IfModActive="mlie.powerfulpsycastai, metalocif.aipsycasts">Mods/EnemyPsycast</li>
     <li IfModActive="oskarpotocki.vfe.empire">Mods/VFE-Empire</li>
+    <li IfModActive="oskarpotocki.vfe.pirates">Mods/VFE-Pirates</li>
     <li IfModActive="zal.eltexweaponry">Mods/EltexWeaponary</li>
     <li IfModActive="wara.toomanymods">Mods/TooManyCombat</li>
     <li IfModActive="mse2.core">Mods/MSE2</li>

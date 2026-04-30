@@ -14,6 +14,7 @@
                     <MeleeDamageFactor>1.05</MeleeDamageFactor>
                     <MeleeHitChance>1.1</MeleeHitChance>
                     <MeleeDodgeChance>1.1</MeleeDodgeChance>
+                    <MeleeCooldownFactor>0.9</MeleeCooldownFactor>
                     <ShootingAccuracyPawn>1.1</ShootingAccuracyPawn>
                     <AimingDelayFactor>0.909</AimingDelayFactor> <!-- 1/1.1 -->
                     <MoveSpeed>1.1</MoveSpeed>
@@ -36,8 +37,9 @@
                     <MeleeDamageFactor>1.05</MeleeDamageFactor>
                     <MeleeHitChance>1.1</MeleeHitChance>
                     <MeleeDodgeChance>1.1</MeleeDodgeChance>
+                    <MeleeCooldownFactor>0.9</MeleeCooldownFactor>
                     <ShootingAccuracyPawn>1.1</ShootingAccuracyPawn>
-                    <AimingDelayFactor>0.909</AimingDelayFactor> <!-- 1/1.1 -->
+                    <AimingDelayFactor>0.9</AimingDelayFactor>
                     <MoveSpeed>1.1</MoveSpeed>
                 </statFactors>
             </li>

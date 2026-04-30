@@ -96,8 +96,7 @@
         <value>
             <techHediffsDisallowTags>
                 <li>PainCauser</li>
-                <li>Joywire</li>
-                <li>DrillArm</li>
+                <li>CombatDetrimental</li>
             </techHediffsDisallowTags>
         </value>
     </Operation>
@@ -167,6 +166,12 @@
     </Operation>
 
     <!-- Grenadier -->
+
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]</xpath>
+        <attribute>Name</attribute>
+        <value>EmpireFighterGrenadier</value>
+    </Operation>
 
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/techHediffsTags</xpath>

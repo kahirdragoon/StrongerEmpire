@@ -10,7 +10,7 @@
     <Operation Class="PatchoperationAdd">
         <xpath>Defs/ThingDef[(apparel and (techLevel="Spacer" or techLevel="Ultra" or techLevel="Archotech")) or defName="VAEA_Apparel_RangedShieldBelt"]/comps[not(li[@Class="CompProperties_Biocodable"])]</xpath>
         <value>
-            <li Class="CompProperties_Biocodable"/>
+            <li Class="CompProperties_Biocodable" />
         </value>
     </Operation>
 
@@ -55,5 +55,27 @@
             </nomatch>
         </match>
     </Operation> -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[not(techHediffsTags) and (
+            defName="Joywire" or
+            defName="DrillArm" or
+            defName="CircadianHalfCycler" or
+            defName="FieldHand")]</xpath>
+        <value>
+            <techHediffsTags></techHediffsTags>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[
+            defName="Joywire" or
+            defName="DrillArm" or
+            defName="CircadianHalfCycler" or
+            defName="FieldHand"]/techHediffsTags[not(li/text()="CombatDetrimental")]</xpath>
+        <value>
+            <li>CombatDetrimental</li>
+        </value>
+    </Operation>
 
 </Patch>

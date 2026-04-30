@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -v \"^--$\")",
+      "Bash(where ilspycmd *)",
+      "Bash(where dotnet *)",
+      "Read(//c/Users/mdeek/.dotnet/tools/**)",
+      "Read(//c/Program Files/**)",
+      "Bash(ilspycmd \"E:/SteamLibrary/steamapps/workshop/content/294100/2723801948/1.6/Assemblies/VFEPirates.dll\" -t \"VFEPirates.PawnGenerator_GeneratePawn_Patch\")",
+      "Bash(ilspycmd \"E:/SteamLibrary/steamapps/workshop/content/294100/2723801948/1.6/Assemblies/VFEPirates.dll\" -t \"VFEPirates.WarcasketUtility\")",
+      "Bash(ilspycmd \"E:/SteamLibrary/steamapps/workshop/content/294100/2023507013/1.6/Assemblies/VEF.dll\" -t \"VEF.Weapons.VanillaExpandedFramework_Pawn_ApparelTracker_Notify_ApparelRemoved_Patch\")",
+      "Bash(ilspycmd \"E:/SteamLibrary/steamapps/workshop/content/294100/2023507013/1.6/Assemblies/VEF.dll\" -t \"VEF.Weapons.VanillaExpandedFramework_EquipmentUtility_CanEquip_Patch\")",
+      "Bash(ilspycmd \"E:/SteamLibrary/steamapps/workshop/content/294100/2723801948/1.6/Assemblies/VFEPirates.dll\" -t \"VFEPirates.Apparel_Warcasket\")",
+      "Bash(ilspycmd \"E:/SteamLibrary/steamapps/workshop/content/294100/2723801948/1.6/Assemblies/VFEPirates.dll\" -t \"VFEPirates.Apparel_GuardianShoulders\")",
+      "Bash(ilspycmd \"E:/SteamLibrary/steamapps/workshop/content/294100/2723801948/1.6/Assemblies/VFEPirates.dll\" -t \"VFEPirates.VFEPiratesMod\")",
+      "Bash(ilspycmd \"E:/SteamLibrary/steamapps/workshop/content/294100/2723801948/1.6/Assemblies/VFEPirates.dll\" -t \"VFEPirates.WarcasketDef\")",
+      "Bash(ilspycmd \"E:/SteamLibrary/steamapps/workshop/content/294100/2723801948/1.6/Assemblies/VFEPirates.dll\" --nested-types)",
+      "Bash(ilspycmd \"E:/SteamLibrary/steamapps/workshop/content/294100/2723801948/1.6/Assemblies/VFEPirates.dll\")",
+      "Bash(ilspycmd \"E:/SteamLibrary/steamapps/workshop/content/294100/2723801948/1.6/Assemblies/VFEPirates.dll\" -t \"VFEPirates.StaticStartup\")",
+      "Bash(ilspycmd \"E:/SteamLibrary/steamapps/workshop/content/294100/2023507013/1.6/Assemblies/VEF.dll\" -t \"VEF.Apparels.VanillaExpandedFramework_Pawn_ApparelTracker_Notify_ApparelAdded_Patch\")",
+      "Bash(ilspycmd \"E:/SteamLibrary/steamapps/workshop/content/294100/2023507013/1.6/Assemblies/VEF.dll\" -t \"VEF.Apparels.ApparelExtensionUtilities\")",
+      "Bash(ilspycmd \"E:/SteamLibrary/steamapps/workshop/content/294100/2023507013/1.6/Assemblies/VEF.dll\" -t \"VEF.Apparels.VanillaExpandedFramework_Pawn_ApparelTracker_Wear_Patch\")",
+      "Bash(ilspycmd \"E:/SteamLibrary/steamapps/workshop/content/294100/2023507013/1.6/Assemblies/VEF.dll\")"
+    ]
+  }
+}

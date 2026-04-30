@@ -1,7 +1,10 @@
 - support for altered Carbon (add Quality genes)
 - support for rebuild walls and doors
-. Change majority of soldiers to clone soldiers
+. change majority of soldiers to clone soldiers
 - support for Vehicle Raid Framework
 - give empire sophian styles
-- rework gene distribution
+- rework gene Distribution -> pawn hunter gene spawner
 - tiered raids?
+- fix warckaset color to be white
+- raiders use jumppacks
+- retialiates with IRBM Nukes and uses Anti-Missile stuff (https://steamcommunity.com/sharedfiles/filedetails/?id=3682304832)

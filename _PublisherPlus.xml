@@ -13,7 +13,6 @@
     <exclude>About\LuciferiumInfusionRaw.png</exclude>
     <exclude>About\PreviewRaw.png</exclude>
     <exclude>About\PreviewWithText.png</exclude>
-    <exclude>About\PublishedFileId.txt</exclude>
     <exclude>About\Settings.png</exclude>
     <exclude>changelog.txt</exclude>
     <exclude>Source</exclude>

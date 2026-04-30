@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PawnKindDef Name="EmpireHopliteMelee" ParentName="EmpireFighterCataphractMelee">
+		<defName>Empire_HopliteMelee</defName>
+		<label>hoplite</label>
+		<combatPower>250</combatPower>
+		<weaponMoney>3000~5000</weaponMoney>
+		<apparelRequired Inherit="false">
+			<li>VFEP_WarcasketHelmet_Guardian</li>
+			<li>VFEP_Warcasket_Guardian</li>
+			<li>VFEP_WarcasketShoulders_Guardian</li>
+		</apparelRequired>
+		<apparelColor>(1, 1, 1)</apparelColor>
+		<specificApparelRequirements Inherit="false">
+			
+		</specificApparelRequirements>
+		<apparelTags Inherit="false" />
+		<weaponTags Inherit="false">
+			<li>EmpireWarcasketMelee</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef Name="EmpireHopliteRanged" ParentName="EmpireFighterCataphractMelee">
+		<defName>Empire_HopliteRanged</defName>
+		<label>hoplite</label>
+		<combatPower>250</combatPower>
+		<weaponMoney>3000~5000</weaponMoney>
+		<apparelColor>(1, 1, 1)</apparelColor>
+		<specificApparelRequirements Inherit="false">
+		</specificApparelRequirements>
+		<apparelRequired Inherit="false">
+			<li>VFEP_WarcasketHelmet_Guardian</li>
+			<li>VFEP_Warcasket_Guardian</li>
+			<li>VFEP_WarcasketShoulders_Guardian</li>
+		</apparelRequired>
+		<apparelTags Inherit="false" />
+		<weaponTags Inherit="false">
+			<li>EmpireWarcasketRanged</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef Name="EmpireHopliteSapper" ParentName="EmpireFighterGrenadier">
+		<defName>Empire_HopliteSapper</defName>
+		<label>armored grenadier</label>
+		<combatPower>250</combatPower>
+		<weaponMoney>3000~5000</weaponMoney>
+		<apparelColor>(1, 1, 1)</apparelColor>
+		<specificApparelRequirements Inherit="false">
+			
+		</specificApparelRequirements>
+		<apparelTags Inherit="false" />
+		<apparelRequired Inherit="false">
+			<li>VFEP_WarcasketHelmet_Cataphract</li>
+			<li>VFEP_Warcasket_Cataphract</li>
+			<li>VFEP_WarcasketShoulders_Cataphract</li>
+		</apparelRequired>
+		<weaponTags Inherit="false">
+			<li>EmpireWarcasketSapper</li>
+		</weaponTags>
+	</PawnKindDef>
+</Defs>

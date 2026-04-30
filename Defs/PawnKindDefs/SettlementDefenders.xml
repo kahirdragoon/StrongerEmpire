@@ -41,4 +41,12 @@
         <defName>Empire_Fighter_Cataphract_Hussar_Settlement</defName>
         <combatPower>55</combatPower>
     </PawnKindDef>
+    <PawnKindDef ParentName="EmpireHopliteMelee" MayRequire="oskarpotocki.vfe.pirates">
+        <defName>Empire_HopliteMelee_Settlement</defName>
+        <combatPower>90</combatPower>
+    </PawnKindDef>
+    <PawnKindDef ParentName="EmpireHopliteRanged" MayRequire="oskarpotocki.vfe.pirates">
+        <defName>Empire_HopliteRanged_Settlement</defName>
+        <combatPower>90</combatPower>
+    </PawnKindDef>
 </Defs>

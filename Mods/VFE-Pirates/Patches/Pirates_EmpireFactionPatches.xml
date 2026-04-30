@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Pawn groups-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li/options[Empire_Fighter_Cataphract]</xpath>
+        <value>
+            <Empire_HopliteMelee>0.3</Empire_HopliteMelee>
+            <Empire_HopliteRanged>0.3</Empire_HopliteRanged>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+            Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li/options[Empire_Fighter_Grenadier]</xpath>
+        <value>
+            <Empire_HopliteSapper>0.3</Empire_HopliteSapper>
+        </value>
+    </Operation>
+
+    <!-- Weapon tags -->
+     <Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VFEP_WarcasketGun_ChargeLance" or
+                             defName="VFEP_WarcasketGun_CryptoCannon" or
+                             defName="VFEP_WarcasketGun_Railgun" or
+                             defName="VFEP_WarcasketGun_SalvagedLaserEradicator"]/weaponTags</xpath>
+		<value>
+			<li>EmpireWarcasketRanged</li>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VFEP_WarcasketMeleeWeapon_PlasmaSword" or 
+                             defName="VFEP_WarcasketMeleeWeapon_GravityHammer" or
+                             defName="VFEP_WarcasketMeleeWeapon_Broadsword"]/weaponTags</xpath>
+		<value>
+			<li>EmpireWarcasketMelee</li>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VFEP_WarcasketGun_GrenadeLauncher" or 
+                             defName="VWEB_Warbolter"]/weaponTags</xpath>
+		<value>
+			<li>EmpireWarcasketSapper</li>
+		</value>
+	</Operation>
+</Patch>
