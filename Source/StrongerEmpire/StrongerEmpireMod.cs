@@ -41,6 +41,12 @@ public class StrongerEmpireMod : Mod
         DoUnwaveringLoyalSettings(listing);
         listing.GapLine();
 
+        if (ModsConfig.RoyaltyActive)
+        {
+            DoJumpPackAISettings(listing);
+            listing.GapLine();
+        }
+
         if (ModsConfig.BiotechActive)
             DoGeneSettings(listing);
 
@@ -114,6 +120,12 @@ public class StrongerEmpireMod : Mod
         listing.Label($"Chance to replace weapon with unique weapon: {Mathf.Round(settings.uniqueWeaponSpawnChance * 10000) / 100}%");
         // Slider (0 to 1, step of 0.001)
         settings.uniqueWeaponSpawnChance = Mathf.Round(listing.Slider(settings.uniqueWeaponSpawnChance, 0f, 1f) / 0.001f) * 0.001f;
+    }
+
+    private void DoJumpPackAISettings(Listing_Standard listing)
+    {
+        listing.CheckboxLabeled("Enable jump pack AI for raiders", ref settings.enableJumpPackAI,
+            "Raiders and enemies equipped with a jump pack will automatically use it in combat.");
     }
 
     private void DocombatPowerMultiplicatorSettings(Listing_Standard listing)

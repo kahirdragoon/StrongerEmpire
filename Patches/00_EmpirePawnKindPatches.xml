@@ -165,6 +165,31 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/apparelRequired/li[.="Apparel_ShieldBelt"]</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Champion"]</xpath>
+        <value>
+            <specificApparelRequirements>
+                <li>
+                    <bodyPartGroup>Waist</bodyPartGroup>
+                    <alternateTagChoices>
+                        <li>
+                            <tag>PackJump</tag>
+                            <chance>0.5</chance>
+                        </li>
+                        <li>
+                            <tag>Empire_ShieldBelt</tag>
+                            <chance>1</chance>
+                        </li>
+                    </alternateTagChoices>
+                </li>
+            </specificApparelRequirements>
+        </value>
+    </Operation>
+
     <!-- Grenadier -->
 
     <Operation Class="PatchOperationAttributeSet">
@@ -291,12 +316,12 @@
         </mods>
         <nomatch Class="PatchOperationAdd">
             <xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/techHediffsRequired</xpath>
-        <value>
-            <li>BionicStomach</li>
-            <li>BionicHeart</li>
-            <li>Immunoenhancer</li>
-            <li>Immunoenhancer</li>
-        </value>
+            <value>
+                <li>BionicStomach</li>
+                <li>BionicHeart</li>
+                <li>Immunoenhancer</li>
+                <li>Immunoenhancer</li>
+            </value>
         </nomatch>
     </Operation>
 
@@ -310,9 +335,9 @@
         </mods>
         <nomatch Class="PatchOperationAdd">
             <xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/techHediffsRequired</xpath>
-        <value>
-            <li>BionicStomach</li>
-        </value>
+            <value>
+                <li>BionicStomach</li>
+            </value>
         </nomatch>
     </Operation>
 
@@ -322,14 +347,14 @@
         </mods>
         <nomatch Class="PatchOperationAdd">
             <xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/techHediffsRequired</xpath>
-        <value>
-            <li>BionicLeg</li>
-            <li>BionicLeg</li>
-            <li>BionicEar</li>
-            <li>BionicEar</li>
-            <li>BionicJaw</li>
-            <li>BionicSpine</li>
-        </value>
+            <value>
+                <li>BionicLeg</li>
+                <li>BionicLeg</li>
+                <li>BionicEar</li>
+                <li>BionicEar</li>
+                <li>BionicJaw</li>
+                <li>BionicSpine</li>
+            </value>
         </nomatch>
     </Operation>
 
@@ -340,10 +365,10 @@
         </mods>
         <nomatch Class="PatchOperationAdd">
             <xpath>Defs/PawnKindDef[@Name="StellicGuardBase"]/techHediffsRequired</xpath>
-        <value>
-            <li>BionicArm</li>
-            <li>BionicArm</li>
-        </value>
+            <value>
+                <li>BionicArm</li>
+                <li>BionicArm</li>
+            </value>
         </nomatch>
     </Operation>
 

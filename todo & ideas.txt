@@ -6,5 +6,6 @@
 - rework gene Distribution -> pawn hunter gene spawner
 - tiered raids?
 - fix warckaset color to be white
-- raiders use jumppacks
+- locust armor wearing raider
 - retialiates with IRBM Nukes and uses Anti-Missile stuff (https://steamcommunity.com/sharedfiles/filedetails/?id=3682304832)
+- support for alternate Hostile Empire factions (Simple Hostile Empire, etc)

@@ -42,6 +42,9 @@ namespace StrongerEmpire
         public const float combatPowerMultiplicatorDefault = 1f;
         public float combatPowerMultiplicator = combatPowerMultiplicatorDefault;
 
+        // Jump pack AI
+        public bool enableJumpPackAI = true;
+
         public override void ExposeData()
         {
             Scribe_Values.Look(ref enableGeneModification, "enableGeneModification", true);
@@ -62,6 +65,8 @@ namespace StrongerEmpire
             Scribe_Values.Look(ref uniqueWeaponSpawnChance, "uniqueWeaponSpawnChance", uniqueWeaponSpawnChanceDefault);
 
             Scribe_Values.Look(ref combatPowerMultiplicator, "combatPowerMultiplicator", combatPowerMultiplicatorDefault);
+
+            Scribe_Values.Look(ref enableJumpPackAI, "enableJumpPackAI", true);
 
             base.ExposeData();
         }

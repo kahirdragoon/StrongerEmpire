@@ -8,12 +8,11 @@
     </Operation>
 
     <Operation Class="PatchoperationAdd">
-        <xpath>Defs/ThingDef[(apparel and (techLevel="Spacer" or techLevel="Ultra" or techLevel="Archotech")) or defName="VAEA_Apparel_RangedShieldBelt"]/comps[not(li[@Class="CompProperties_Biocodable"])]</xpath>
+        <xpath>Defs/ThingDef[(apparel and (techLevel="Spacer" or techLevel="Ultra" or techLevel="Archotech")) or defName="VAEA_Apparel_RangedShieldBelt" or defName="Apparel_PackJump"]/comps[not(li[@Class="CompProperties_Biocodable"])]</xpath>
         <value>
             <li Class="CompProperties_Biocodable" />
         </value>
     </Operation>
-
 
     <!-- <Operation Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[apparel and (techLevel="Spacer" or techLevel="Ultra")]/apparel[not(layers/li[text()="Belt"] or layers/li[text()="Utility"]) and not(tags)]</xpath>
@@ -75,6 +74,23 @@
             defName="FieldHand"]/techHediffsTags[not(li/text()="CombatDetrimental")]</xpath>
         <value>
             <li>CombatDetrimental</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+        <xpath>Defs/ThingDef[defName="Apparel_ShieldBelt"]/apparel/tags</xpath>
+        <value>
+            <li>Empire_ShieldBelt</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+        <xpath>Defs/ThingDef[defName="Apparel_PackJump"]/comps</xpath>
+        <value>
+            <li Class="StrongerEmpire.CompProperties_JumpPackAI">
+                <meleeEngageRadius>6</meleeEngageRadius>
+                <rangedEscapeRadius>6</rangedEscapeRadius>
+            </li>
         </value>
     </Operation>
 

@@ -16,7 +16,6 @@
         <apparelRequired>
             <li>Apparel_ArmorHelmetCataphract</li>
             <li>Apparel_ArmorCataphract</li>
-            <li>Apparel_ShieldBelt</li>
         </apparelRequired>
         <specificApparelRequirements Inherit="False">
             <li>
@@ -28,6 +27,19 @@
                 <bodyPartGroup>Legs</bodyPartGroup>
                 <apparelLayer>OnSkin</apparelLayer>
                 <stuff>Synthread</stuff>
+            </li>
+            <li>
+                <bodyPartGroup>Waist</bodyPartGroup>
+                <alternateTagChoices>
+                    <li>
+                        <tag>PackJump</tag>
+                        <chance>0.5</chance>
+                    </li>
+                    <li>
+                        <tag>Empire_ShieldBelt</tag>
+                        <chance>1</chance>
+                    </li>
+                </alternateTagChoices>
             </li>
         </specificApparelRequirements>
         <techHediffsTags>
