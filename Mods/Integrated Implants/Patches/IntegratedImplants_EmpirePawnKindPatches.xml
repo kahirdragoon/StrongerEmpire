@@ -17,7 +17,7 @@
         <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Janissary"]/techHediffsRequired</xpath>
         <value>
             <li>InternalClimateControlImplant</li>
-            <li>LTS_ShoulderTurret</li>
+            <li MayRequire="oskarpotocki.vanillafactionsexpanded.core">LTS_ShoulderTurret</li>
         </value>
     </Operation>
 
@@ -38,7 +38,7 @@
         <value>
             <techHediffsRequired>
                 <li>InternalClimateControlImplant</li>
-                <li>LTS_ShoulderTurret</li>
+                <li MayRequire="oskarpotocki.vanillafactionsexpanded.core">LTS_ShoulderTurret</li>
             </techHediffsRequired>
         </value>
     </Operation>
@@ -61,7 +61,7 @@
             <li>StrengthEnhancer</li>
             <li>Synthmarrow</li>
             <li>LTS_SubdermalArmour</li>
-            <li>LTS_ShoulderChargeTurret</li>
+            <li MayRequire="oskarpotocki.vanillafactionsexpanded.core">LTS_ShoulderChargeTurret</li>
             <li>LTS_BionicTail</li>
             <li>InternalClimateControlImplant</li>
             <li>LTS_CellularAdapter</li>
@@ -87,7 +87,7 @@
             <li>StrengthEnhancer</li>
             <li>Synthmarrow</li>
             <li>LTS_SubdermalArmour</li>
-            <li>LTS_ShoulderChargeTurret</li>
+            <li MayRequire="oskarpotocki.vanillafactionsexpanded.core">LTS_ShoulderChargeTurret</li>
             <li>LTS_BionicTail</li>
             <li>InternalClimateControlImplant</li>
             <li>LTS_CellularAdapter</li>
@@ -103,7 +103,7 @@
             <li>StrengthEnhancer</li>
             <li>Synthmarrow</li>
             <li>LTS_PrestigeSubdermalArmour</li>
-            <li>LTS_ShoulderChargeTurret</li>
+            <li MayRequire="oskarpotocki.vanillafactionsexpanded.core">LTS_ShoulderChargeTurret</li>
             <li>CranialInsulation</li>
             <li>EltexAdornments</li>
             <li>NeuralHeatsink</li>

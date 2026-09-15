@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
     <!-- Psy Janissary -->
     <PawnkindDef Name="EmpireFighterJanissaryPsy" ParentName="EmpireFighterJanissary" MayRequire="zal.eltexweaponry">

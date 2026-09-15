@@ -8,7 +8,7 @@
     </Operation>
 
     <Operation Class="PatchoperationAdd">
-        <xpath>Defs/ThingDef[(apparel and (techLevel="Spacer" or techLevel="Ultra" or techLevel="Archotech")) or defName="VAEA_Apparel_RangedShieldBelt" or defName="Apparel_PackJump"]/comps[not(li[@Class="CompProperties_Biocodable"])]</xpath>
+        <xpath>Defs/ThingDef[((apparel and (techLevel="Spacer" or techLevel="Ultra" or techLevel="Archotech")) or defName="VAEA_Apparel_RangedShieldBelt" or defName="Apparel_PackJump") and not(comps/li[@Class="CompProperties_Biocodable"])]/comps[1]</xpath>
         <value>
             <li Class="CompProperties_Biocodable" />
         </value>
@@ -93,5 +93,22 @@
             </li>
         </value>
     </Operation>
+
+    <!-- <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+        <xpath>Defs/ThingDef[defName="Apparel_ArmorLocust"]/comps</xpath>
+        <value>
+            <li Class="StrongerEmpire.CompProperties_JumpPackAI">
+                <meleeEngageRadius>6</meleeEngageRadius>
+                <rangedEscapeRadius>6</rangedEscapeRadius>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+        <xpath>Defs/ThingDef[defName="Apparel_ArmorLocust"]</xpath>
+        <value>
+            <tickerType>Normal</tickerType>
+        </value>
+    </Operation> -->
 
 </Patch>
